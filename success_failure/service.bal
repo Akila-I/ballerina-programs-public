@@ -1221,7 +1221,10 @@ service /srvc on new http:Listener(8080) {
 
         string longjsonlength = longjson.toString().length().toString();
 
+        log:printInfo("LOG BEFORE LONG JSON LOGGING");
         log:printInfo("Request received at /longjsonlog endpoint with long json: " + longjson.toString());
+        log:printInfo("LOG AFTER LONG JSON LOGGING");
+        
         log:printInfo("Length of long json: " + longjsonlength);
         return "Long json with length " + longjsonlength + " logged successfully";
     }
