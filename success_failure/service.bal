@@ -166,6 +166,146 @@ service /srvc on new http:Listener(8080) {
             "field98": "this is the value 98 for field 98 in the additional data20 of the short json object",
             "field99": "this is the value 99 for field 99 in the additional data20 of the short json object",
             "field100": "this is the value 100 for field 100 in the additional data20 of the short json object"
+            },
+            "additionalData21": {
+                "field101": "this is the value 101 for field 101 in the additional data21 of the long json object",
+                "field102": "this is the value 102 for field 102 in the additional data21 of the long json object",
+                "field103": "this is the value 103 for field 103 in the additional data21 of the long json object",
+                "field104": "this is the value 104 for field 104 in the additional data21 of the long json object",
+                "field105": "this is the value 105 for field 105 in the additional data21 of the long json object"
+            },
+            "additionalData22": {
+                "field106": "this is the value 106 for field 106 in the additional data22 of the long json object",
+                "field107": "this is the value 107 for field 107 in the additional data22 of the long json object",
+                "field108": "this is the value 108 for field 108 in the additional data22 of the long json object",
+                "field109": "this is the value 109 for field 109 in the additional data22 of the long json object",
+                "field110": "this is the value 110 for field 110 in the additional data22 of the long json object"
+            },
+            "additionalData23": {
+                "field111": "this is the value 111 for field 111 in the additional data23 of the long json object",
+                "field112": "this is the value 112 for field 112 in the additional data23 of the long json object",
+                "field113": "this is the value 113 for field 113 in the additional data23 of the long json object",
+                "field114": "this is the value 114 for field 114 in the additional data23 of the long json object",
+                "field115": "this is the value 115 for field 115 in the additional data23 of the long json object"
+            },
+            "additionalData24": {
+                "field116": "this is the value 116 for field 116 in the additional data24 of the long json object",
+                "field117": "this is the value 117 for field 117 in the additional data24 of the long json object",
+                "field118": "this is the value 118 for field 118 in the additional data24 of the long json object",
+                "field119": "this is the value 119 for field 119 in the additional data24 of the long json object",
+                "field120": "this is the value 120 for field 120 in the additional data24 of the long json object"
+            },
+            "additionalData25": {
+                "field121": "this is the value 121 for field 121 in the additional data25 of the long json object",
+                "field122": "this is the value 122 for field 122 in the additional data25 of the long json object",
+                "field123": "this is the value 123 for field 123 in the additional data25 of the long json object",
+                "field124": "this is the value 124 for field 124 in the additional data25 of the long json object",
+                "field125": "this is the value 125 for field 125 in the additional data25 of the long json object"
+            },
+            "additionalData26": {
+                "field126": "this is the value 126 for field 126 in the additional data26 of the long json object",
+                "field127": "this is the value 127 for field 127 in the additional data26 of the long json object",
+                "field128": "this is the value 128 for field 128 in the additional data26 of the long json object",
+                "field129": "this is the value 129 for field 129 in the additional data26 of the long json object",
+                "field130": "this is the value 130 for field 130 in the additional data26 of the long json object"
+            },
+            "additionalData27": {
+                "field131": "this is the value 131 for field 131 in the additional data27 of the long json object",
+                "field132": "this is the value 132 for field 132 in the additional data27 of the long json object",
+                "field133": "this is the value 133 for field 133 in the additional data27 of the long json object",
+                "field134": "this is the value 134 for field 134 in the additional data27 of the long json object",
+                "field135": "this is the value 135 for field 135 in the additional data27 of the long json object"
+            },
+            "additionalData28": {
+                "field136": "this is the value 136 for field 136 in the additional data28 of the long json object",
+                "field137": "this is the value 137 for field 137 in the additional data28 of the long json object",
+                "field138": "this is the value 138 for field 138 in the additional data28 of the long json object",
+                "field139": "this is the value 139 for field 139 in the additional data28 of the long json object",
+                "field140": "this is the value 140 for field 140 in the additional data28 of the long json object"
+            },
+            "additionalData29": {
+                "field141": "this is the value 141 for field 141 in the additional data29 of the long json object",
+                "field142": "this is the value 142 for field 142 in the additional data29 of the long json object",
+                "field143": "this is the value 143 for field 143 in the additional data29 of the long json object",
+                "field144": "this is the value 144 for field 144 in the additional data29 of the long json object",
+                "field145": "this is the value 145 for field 145 in the additional data29 of the long json object"
+            },
+            "additionalData30": {
+                "field146": "this is the value 146 for field 146 in the additional data30 of the long json object",
+                "field147": "this is the value 147 for field 147 in the additional data30 of the long json object",
+                "field148": "this is the value 148 for field 148 in the additional data30 of the long json object",
+                "field149": "this is the value 149 for field 149 in the additional data30 of the long json object",
+                "field150": "this is the value 150 for field 150 in the additional data30 of the long json object"
+            },
+            "additionalData31": {
+                "field151": "this is the value 151 for field 151 in the additional data31 of the long json object",
+                "field152": "this is the value 152 for field 152 in the additional data31 of the long json object",
+                "field153": "this is the value 153 for field 153 in the additional data31 of the long json object",
+                "field154": "this is the value 154 for field 154 in the additional data31 of the long json object",
+                "field155": "this is the value 155 for field 155 in the additional data31 of the long json object"
+            },
+            "additionalData32": {
+                "field156": "this is the value 156 for field 156 in the additional data32 of the long json object",
+                "field157": "this is the value 157 for field 157 in the additional data32 of the long json object",
+                "field158": "this is the value 158 for field 158 in the additional data32 of the long json object",
+                "field159": "this is the value 159 for field 159 in the additional data32 of the long json object",
+                "field160": "this is the value 160 for field 160 in the additional data32 of the long json object"
+            },
+            "additionalData33": {
+                "field161": "this is the value 161 for field 161 in the additional data33 of the long json object",
+                "field162": "this is the value 162 for field 162 in the additional data33 of the long json object",
+                "field163": "this is the value 163 for field 163 in the additional data33 of the long json object",
+                "field164": "this is the value 164 for field 164 in the additional data33 of the long json object",
+                "field165": "this is the value 165 for field 165 in the additional data33 of the long json object"
+            },
+            "additionalData34": {
+                "field166": "this is the value 166 for field 166 in the additional data34 of the long json object",
+                "field167": "this is the value 167 for field 167 in the additional data34 of the long json object",
+                "field168": "this is the value 168 for field 168 in the additional data34 of the long json object",
+                "field169": "this is the value 169 for field 169 in the additional data34 of the long json object",
+                "field170": "this is the value 170 for field 170 in the additional data34 of the long json object"
+            },
+            "additionalData35": {
+                "field171": "this is the value 171 for field 171 in the additional data35 of the long json object",
+                "field172": "this is the value 172 for field 172 in the additional data35 of the long json object",
+                "field173": "this is the value 173 for field 173 in the additional data35 of the long json object",
+                "field174": "this is the value 174 for field 174 in the additional data35 of the long json object",
+                "field175": "this is the value 175 for field 175 in the additional data35 of the long json object"
+            },
+            "additionalData36": {
+                "field176": "this is the value 176 for field 176 in the additional data36 of the long json object",
+                "field177": "this is the value 177 for field 177 in the additional data36 of the long json object",
+                "field178": "this is the value 178 for field 178 in the additional data36 of the long json object",
+                "field179": "this is the value 179 for field 179 in the additional data36 of the long json object",
+                "field180": "this is the value 180 for field 180 in the additional data36 of the long json object"
+            },
+            "additionalData37": {
+                "field181": "this is the value 181 for field 181 in the additional data37 of the long json object",
+                "field182": "this is the value 182 for field 182 in the additional data37 of the long json object",
+                "field183": "this is the value 183 for field 183 in the additional data37 of the long json object",
+                "field184": "this is the value 184 for field 184 in the additional data37 of the long json object",
+                "field185": "this is the value 185 for field 185 in the additional data37 of the long json object"
+            },
+            "additionalData38": {
+                "field186": "this is the value 186 for field 186 in the additional data38 of the long json object",
+                "field187": "this is the value 187 for field 187 in the additional data38 of the long json object",
+                "field188": "this is the value 188 for field 188 in the additional data38 of the long json object",
+                "field189": "this is the value 189 for field 189 in the additional data38 of the long json object",
+                "field190": "this is the value 190 for field 190 in the additional data38 of the long json object"
+            },
+            "additionalData39": {
+                "field191": "this is the value 191 for field 191 in the additional data39 of the long json object",
+                "field192": "this is the value 192 for field 192 in the additional data39 of the long json object",
+                "field193": "this is the value 193 for field 193 in the additional data39 of the long json object",
+                "field194": "this is the value 194 for field 194 in the additional data39 of the long json object",
+                "field195": "this is the value 195 for field 195 in the additional data39 of the long json object"
+            },
+            "additionalData40": {
+                "field196": "this is the value 196 for field 196 in the additional data40 of the long json object",
+                "field197": "this is the value 197 for field 197 in the additional data40 of the long json object",
+                "field198": "this is the value 198 for field 198 in the additional data40 of the long json object",
+                "field199": "this is the value 199 for field 199 in the additional data40 of the long json object",
+                "field200": "this is the value 200 for field 200 in the additional data40 of the long json object"
             }
         };
         log:printInfo("Request received at /shortjsonlog endpoint with short json object: " + shortjson.toString());
