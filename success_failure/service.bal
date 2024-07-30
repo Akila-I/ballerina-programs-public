@@ -19,6 +19,35 @@ service /srvc on new http:Listener(8080) {
         return "Custom fields";
     }
 
+    resource function get shortjsonlog() returns string {
+        json shortjson = {
+            "name": "John",
+            "age": 30,
+            "address": {
+            "street": "21 2nd Street",
+            "city": "New York"
+            },
+            "additionalData": {
+                "field1": "this is the value 1 for field 1 in the additional data of the short json object",
+                "field2": "this is the value 2 for field 2 in the additional data of the short json object",
+                "field3": "this is the value 3 for field 3 in the additional data of the short json object",
+                "field4": "this is the value 4 for field 4 in the additional data of the short json object",
+                "field5": "this is the value 5 for field 5 in the additional data of the short json object"
+            },
+            "additionalData2": {
+                "field6": "this is the value 6 for field 6 in the additional data2 of the short json object",
+                "field7": "this is the value 7 for field 7 in the additional data2 of the short json object",
+                "field8": "this is the value 8 for field 8 in the additional data2 of the short json object",
+                "field9": "this is the value 9 for field 9 in the additional data2 of the short json object",
+                "field10": "this is the value 10 for field 10 in the additional data2 of the short json object"
+            }
+        };
+        log:printInfo("Request received at /shortjsonlog endpoint with short json object: " + shortjson.toString());
+        string shortjsonlength = shortjson.toString().length().toString();
+        log:printInfo("Length of short json: " + shortjsonlength);
+        return "Short json with length " + shortjsonlength + " logged successfully";
+    }
+
     resource function get longjsonlog() returns string {
         json longjson = {
             "name": "John",
