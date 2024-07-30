@@ -96,6 +96,76 @@ service /srvc on new http:Listener(8080) {
             "field48": "this is the value 48 for field 48 in the additional data10 of the short json object",
             "field49": "this is the value 49 for field 49 in the additional data10 of the short json object",
             "field50": "this is the value 50 for field 50 in the additional data10 of the short json object"
+            },
+            "additionalData11": {
+            "field51": "this is the value 51 for field 51 in the additional data11 of the short json object",
+            "field52": "this is the value 52 for field 52 in the additional data11 of the short json object",
+            "field53": "this is the value 53 for field 53 in the additional data11 of the short json object",
+            "field54": "this is the value 54 for field 54 in the additional data11 of the short json object",
+            "field55": "this is the value 55 for field 55 in the additional data11 of the short json object"
+            },
+            "additionalData12": {
+            "field56": "this is the value 56 for field 56 in the additional data12 of the short json object",
+            "field57": "this is the value 57 for field 57 in the additional data12 of the short json object",
+            "field58": "this is the value 58 for field 58 in the additional data12 of the short json object",
+            "field59": "this is the value 59 for field 59 in the additional data12 of the short json object",
+            "field60": "this is the value 60 for field 60 in the additional data12 of the short json object"
+            },
+            "additionalData13": {
+            "field61": "this is the value 61 for field 61 in the additional data13 of the short json object",
+            "field62": "this is the value 62 for field 62 in the additional data13 of the short json object",
+            "field63": "this is the value 63 for field 63 in the additional data13 of the short json object",
+            "field64": "this is the value 64 for field 64 in the additional data13 of the short json object",
+            "field65": "this is the value 65 for field 65 in the additional data13 of the short json object"
+            },
+            "additionalData14": {
+            "field66": "this is the value 66 for field 66 in the additional data14 of the short json object",
+            "field67": "this is the value 67 for field 67 in the additional data14 of the short json object",
+            "field68": "this is the value 68 for field 68 in the additional data14 of the short json object",
+            "field69": "this is the value 69 for field 69 in the additional data14 of the short json object",
+            "field70": "this is the value 70 for field 70 in the additional data14 of the short json object"
+            },
+            "additionalData15": {
+            "field71": "this is the value 71 for field 71 in the additional data15 of the short json object",
+            "field72": "this is the value 72 for field 72 in the additional data15 of the short json object",
+            "field73": "this is the value 73 for field 73 in the additional data15 of the short json object",
+            "field74": "this is the value 74 for field 74 in the additional data15 of the short json object",
+            "field75": "this is the value 75 for field 75 in the additional data15 of the short json object"
+            },
+            "additionalData16": {
+            "field76": "this is the value 76 for field 76 in the additional data16 of the short json object",
+            "field77": "this is the value 77 for field 77 in the additional data16 of the short json object",
+            "field78": "this is the value 78 for field 78 in the additional data16 of the short json object",
+            "field79": "this is the value 79 for field 79 in the additional data16 of the short json object",
+            "field80": "this is the value 80 for field 80 in the additional data16 of the short json object"
+            },
+            "additionalData17": {
+            "field81": "this is the value 81 for field 81 in the additional data17 of the short json object",
+            "field82": "this is the value 82 for field 82 in the additional data17 of the short json object",
+            "field83": "this is the value 83 for field 83 in the additional data17 of the short json object",
+            "field84": "this is the value 84 for field 84 in the additional data17 of the short json object",
+            "field85": "this is the value 85 for field 85 in the additional data17 of the short json object"
+            },
+            "additionalData18": {
+            "field86": "this is the value 86 for field 86 in the additional data18 of the short json object",
+            "field87": "this is the value 87 for field 87 in the additional data18 of the short json object",
+            "field88": "this is the value 88 for field 88 in the additional data18 of the short json object",
+            "field89": "this is the value 89 for field 89 in the additional data18 of the short json object",
+            "field90": "this is the value 90 for field 90 in the additional data18 of the short json object"
+            },
+            "additionalData19": {
+            "field91": "this is the value 91 for field 91 in the additional data19 of the short json object",
+            "field92": "this is the value 92 for field 92 in the additional data19 of the short json object",
+            "field93": "this is the value 93 for field 93 in the additional data19 of the short json object",
+            "field94": "this is the value 94 for field 94 in the additional data19 of the short json object",
+            "field95": "this is the value 95 for field 95 in the additional data19 of the short json object"
+            },
+            "additionalData20": {
+            "field96": "this is the value 96 for field 96 in the additional data20 of the short json object",
+            "field97": "this is the value 97 for field 97 in the additional data20 of the short json object",
+            "field98": "this is the value 98 for field 98 in the additional data20 of the short json object",
+            "field99": "this is the value 99 for field 99 in the additional data20 of the short json object",
+            "field100": "this is the value 100 for field 100 in the additional data20 of the short json object"
             }
         };
         log:printInfo("Request received at /shortjsonlog endpoint with short json object: " + shortjson.toString());
