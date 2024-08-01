@@ -467,13 +467,6 @@ service /srvc on new http:Listener(8080) {
                 "field313": "this is the value 313 for field 313 in the additional data63 of the long json object",
                 "field314": "this is the value 314 for field 314 in the additional data63 of the long json object",
                 "field315": "this is the value 315 for field 315 in the additional data63 of the long json object"
-            },
-            "additionalData64": {
-                "field316": "this is the value 316 for field 316 in the additional data64 of the long json object",
-                "field317": "this is the value 317 for field 317 in the additional data64 of the long json object",
-                "field318": "this is the value 318 for field 318 in the additional data64 of the long json object",
-                "field319": "this is the value 319 for field 319 in the additional data64 of the long json object",
-                "field320": "this is the value 320 for field 320 in the additional data64 of the long json object"
             }
         };
         log:printInfo("Request received at /shortjsonlog endpoint with short json object: " + shortjson.toString());
