@@ -456,7 +456,7 @@ service /srvc on new http:Listener(8080) {
                 "x": "breaks after 31K character"
             }
         };
-        log:printInfo("Request received at /shortjsonlog endpoint with short json object: " + shortjson.toString());
+        log:printInfo("Request received at /shortjsonlog endpoint with short json object", jsonobj = shortjson);
         string shortjsonlength = shortjson.toString().length().toString();
         log:printInfo("Length of short json: " + shortjsonlength);
         return "Short json with length " + shortjsonlength + " logged successfully";
