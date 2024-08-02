@@ -453,10 +453,12 @@ service /srvc on new http:Listener(8080) {
                 "field303": "this is the value 303 for field 303 in the additional data61 of the long json object",
                 "field304": "this is the value 304 for field 304 in the additional data61 of the long json object",
                 "field305": "this is the value 305 for field 305 in the additional data61 of the long json object",
-                "x": "breaks after 31K character"
+                "x": "breaks after 31K character",
+                "this": "should break in text mode"
             }
         };
         log:printInfo("Request received at /shortjsonlog endpoint with short json object", jsonobj = shortjson);
+        log:printInfo("JSON in text mode: " + shortjson.toString());
         string shortjsonlength = shortjson.toString().length().toString();
         log:printInfo("Length of short json: " + shortjsonlength);
         return "Short json with length " + shortjsonlength + " logged successfully";
