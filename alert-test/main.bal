@@ -45,5 +45,6 @@ service /srvc on new http:Listener(8080) {
     resource function get builderror() returns string|error {
         log:printError("Error occurred");
         io:println("Error occurred");
+        return "Fix Build Error";
     }
 }
