@@ -23,10 +23,15 @@ service /srvc on new http:Listener(8080) {
     resource function get setoom() returns error {
         log:printInfo("making the ballerina process to run out of memory");
 
-        string[] arr = ["out of memory"];
+        any[] memoryList = [];
 
         while true {
-            arr.push("out of memory");            
+            byte[] chunk = [];
+            foreach int i in 0 ..< (100*1024*1024) {
+                chunk.push(1);
+            }
+            memoryList.push(chunk);
+            log:printInfo("Memory chunk added. Total memory: " + memoryList.length().toString());
         }
     }
 
