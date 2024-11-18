@@ -14,8 +14,9 @@ service /srvc on new http:Listener(8080) {
     }
 
     resource function get logerror() returns string|error {
-        log:printError("Error occurred");
-        io:println("Error occurred");
+        log:printError("Error occurred; alert should be triggered for error logs");
+        log:printInfo("Error occurred; alert should be triggered for error logs");
+        io:println("Error occurred; alert should be triggered for error logs");
         return error("Error occurred");
     }
 
