@@ -20,27 +20,14 @@ service /srvc on new http:Listener(8080) {
         return error("Error occurred");
     }
 
-    resource function get setoom() returns string|error {
+    resource function get setoom() returns error {
         log:printInfo("making the ballerina process to run out of memory");
 
-        int[*] arr = [];
-        int i = 0;
+        string[] arr = ["out of memory"];
 
         while true {
-            int j = 1000000000000;
-            int k = 1;
-            while j == 0 {
-                j = j - 1;
-                k = k*j;
-            }
-            arr[i] = k;
-            i = i + 1;
-
-            if (i == 1000000000000) {
-                break;
-            }
+            arr.push("out of memory");            
         }
-        return "Out of memory";
     }
 
     resource function get builderror() returns string|error {
