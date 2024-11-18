@@ -1,0 +1,19 @@
+openapi: 3.0.0
+info:
+  title: My Flask App
+  version: 1.0.0
+paths:
+  /oom:
+    get:
+      summary: Endpoint for OOMKill
+      responses:
+        '500':
+          description: A successful response
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  message:
+                    type: string
+                    example: Success
