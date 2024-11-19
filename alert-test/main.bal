@@ -6,6 +6,8 @@ public function main() {
     io:println("Hello, World!");
 }
 
+configurable string buildFailOnConfigMismatch = ?;
+
 service /srvc on new http:Listener(8080) {
     resource function get hello() returns string|error {
         log:printInfo("Hello, World!");
