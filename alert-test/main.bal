@@ -7,6 +7,7 @@ public function main() {
 }
 
 configurable string buildFailOnConfigMismatch = ?;
+configurable string buildFailOnConfigMismatch2 = ?;
 
 service /srvc on new http:Listener(8080) {
     resource function get hello() returns string|error {
