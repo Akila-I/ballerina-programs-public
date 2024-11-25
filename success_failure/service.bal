@@ -19,6 +19,13 @@ service /srvc on new http:Listener(8080) {
         return "Custom fields";
     }
 
+    resource function get infologwitherrorkeyword() returns string|error {
+        log:printInfo("Request received at /infologwitherrorkeyword endpoint with error keyword");
+        log:printInfo("However, this is not an error. No Error.");
+        log:printError("This is an error log");
+        return "Info log with error keyword";
+    }
+
     resource function get shortjsonlog() returns string {
         json shortjson = {
             "name": "John",
