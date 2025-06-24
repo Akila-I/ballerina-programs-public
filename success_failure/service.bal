@@ -23,6 +23,7 @@ service /srvc on new http:Listener(8080) {
         log:printInfo("Request received at /infologwitherrorkeyword endpoint with error keyword");
         log:printInfo("However, this is not an error. No Error.");
         log:printError("This is an error log");
+        log:printError("This is an error log with context", "testContext");
         return "Info log with error keyword";
     }
 
