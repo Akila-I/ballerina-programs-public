@@ -21,11 +21,6 @@ service /srvc on new http:Listener(8080) {
         log:printInfo("Error occurred; alert should be triggered for error logs");
         io:println("Error occurred; alert should be triggered for error logs");
 
-        error? result = throwError("error");
-        if result is error {
-            log:printError("Error occurred in validate function", result);
-        }
-
         return error("Error occurred");
     }
 
@@ -50,10 +45,4 @@ service /srvc on new http:Listener(8080) {
         return "Fix Build Error";
     }
 
-    function throwError(string value) returns error? {
-        if value == "error" {
-            return error("Error occurred");
-        }
-        return ();
-    }
 }

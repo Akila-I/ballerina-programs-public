@@ -1,13 +1,14 @@
 import ballerina/http;
 import ballerina/log;
 
-service /srvc on new http:Listener(8080) {
-    function throwError(string message) returns error? {
-        if message == "error" {
-            return error("Error occurred");
-        }
-        return ();
+function throwError(string message) returns error? {
+    if message == "error" {
+        return error("Error occurred");
     }
+    return ();
+}
+
+service /srvc on new http:Listener(8080) {
     resource function get success() returns string|error {
         log:printInfo("Request received at /success endpoint");
         return "Successful";
@@ -29,7 +30,6 @@ service /srvc on new http:Listener(8080) {
         log:printInfo("Request received at /infologwitherrorkeyword endpoint with error keyword");
         log:printInfo("However, this is not an error. No Error.");
         log:printError("This is an error log");
-        log:printError("This is an error log with context", "testContext");
         error? result = throwError("error");
         if result is error {
             log:printError("Error occurred in infologwitherrorkeyword function", result);
