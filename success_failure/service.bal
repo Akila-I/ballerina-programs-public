@@ -2,6 +2,12 @@ import ballerina/http;
 import ballerina/log;
 
 service /srvc on new http:Listener(8080) {
+    function throwError(string message) returns error? {
+        if message == "error" {
+            return error("Error occurred");
+        }
+        return ();
+    }
     resource function get success() returns string|error {
         log:printInfo("Request received at /success endpoint");
         return "Successful";
@@ -24,6 +30,10 @@ service /srvc on new http:Listener(8080) {
         log:printInfo("However, this is not an error. No Error.");
         log:printError("This is an error log");
         log:printError("This is an error log with context", "testContext");
+        error? result = throwError("error");
+        if result is error {
+            log:printError("Error occurred in infologwitherrorkeyword function", result);
+        }
         return "Info log with error keyword";
     }
 
@@ -1677,14 +1687,14 @@ service /srvc on new http:Listener(8080) {
                 "field849": "this is the value 849 for field 849 in the additional data170 of the long json object",
                 "field850": "this is the value 850 for field 850 in the additional data170 of the long json object"
             }
-        };  
+        };
 
         string longjsonlength = longjson.toString().length().toString();
 
         log:printInfo("LOG BEFORE LONG JSON LOGGING");
         log:printInfo("Request received at /longjsonlog endpoint with long json: " + longjson.toString());
         log:printInfo("LOG AFTER LONG JSON LOGGING");
-        
+
         log:printInfo("Length of long json: " + longjsonlength);
         return "Long json with length " + longjsonlength + " logged successfully";
     }
