@@ -30,9 +30,22 @@ service /srvc on new http:Listener(8080) {
         log:printInfo("Request received at /infologwitherrorkeyword endpoint with error keyword");
         log:printInfo("However, this is not an error. No Error.");
         log:printError("This is an error log");
-        error? result = throwError("error");
+        error? result = error("Error while executing SQL query: \n    DELETE FROM REDACTED WHERE REDACTED =  ? ;\n. DELETE command denied to user 'REDACTED'@'00.0.0.00' for table 'REDACTED'.");
+        // error? result = error("Error while executing SQL query:");
+
+        // "{\"module\":\"wso2\/par_app.utils\",
+        // \"error\":
+        // {\"causes\":[],
+        // \"message\":\"Error while executing SQL query: \n    DELETE FROM REDACTED WHERE REDACTED =  ? ;\n. DELETE command denied to user 'REDACTED'@'00.0.0.00' for table 'REDACTED'.\",
+        // \"detail\":{\"errorCode\":1142,\"sqlState\":\"42000\"},
+        // \"stackTrace\":[]
+        // }
+        // }",
+        // , {"errorCode":1142,"sqlState":"42000"},"stackTrace":[]
+
         if result is error {
             log:printError("Error occurred in infologwitherrorkeyword function", result);
+
         }
         return "Info log with error keyword";
     }
